@@ -3,13 +3,17 @@
 }
 
 body, html {
-    margin: 0 auto;
+    margin: auto;
     min-width: 375px;
     max-width: 1440px;
     font-family: $main-font;
 }
 
 main {
+    width: 100%;
+}
+
+.wrapper {
     width: 100%;
 }
 

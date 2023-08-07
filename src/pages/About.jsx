@@ -6,7 +6,7 @@ import AboutBanner from '../assets/images/about_image_banner.png';
 
 function About() {
     return (
-        <div>
+        <div className='wrapper'>
             <Banner ImageSrc={AboutBanner} BannerTitle='' />
         </div>
     )

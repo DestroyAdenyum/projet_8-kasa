@@ -2,7 +2,7 @@ import React from 'react';
 
 function Accomodation() {
     return (
-        <div>
+        <div className='wrapper'>
             
         </div>
     )
