@@ -1,14 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body, html {
-    width: 100%;
+    margin: 0 auto;
     min-width: 375px;
     max-width: 1440px;
-    scroll-behavior: smooth;
+    font-family: $main-font;
+}
+
+main {
+    width: 100%;
 }
 
 li {
@@ -17,4 +19,5 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }

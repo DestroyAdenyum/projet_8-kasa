@@ -1,5 +1,5 @@
 .header {
-    margin: 40px 100px 40px 100px;
+    margin: 45px 100px 45px 100px;
     width: 1240px;
     @include flex($fdirection: row, $jcontent: space-between, $alitems: center);
 
@@ -9,13 +9,10 @@
     }
 
     .header__links {
-        width: 309px;
-        height: 39px;
         @include flex($fdirection: row, $jcontent: flex-end, $alitems: center);
 
         li {
             padding-left: 55px;
-            font-family: $main-font;
             font-size: $font-S24;
             font-weight: $font-medium;
         }
