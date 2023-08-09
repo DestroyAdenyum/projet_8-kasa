@@ -1,0 +1,34 @@
+.collapse__section {
+    @include flex($fdirection: column, $alitems: center);
+    width: 100%;
+    gap: 30px;
+}
+
+.collapse__container {
+    @include flex($fdirection: column, $jcontent: center, $alitems: center);
+    width: 1240px;
+
+    .collapse__header {
+        @include flex($fdirection: row, $jcontent: space-between, $alitems: center);
+        width: 1023px;
+        height: 52px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        padding: 10px 20px 10px 15px;
+    
+        .collapse__title {
+            color: $secondary-color;
+            font-size: $font-S24;
+            font-weight: $font-medium;
+            margin: 0;
+        }
+    }
+
+    .collapse__content {
+        width: 1023px;
+        background-color: $bg-cards-color;
+        color: $primary-color;
+        border-radius: 0 0 5px 5px;
+        padding: 15px;
+    }
+}

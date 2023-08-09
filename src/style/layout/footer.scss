@@ -4,9 +4,13 @@
     background-color: $bg-footer-color;
     @include flex ($fdirection: column, $jcontent: center, $alitems: center);
 
+    .footer__logo {
+        margin-top: 40px;
+    }
+
     .footer__text {
+        margin-top: 40px;
         color: $secondary-color;
-        margin-top: 20px;
         font-family: $main-font;
         font-size: $font-S24;
         font-weight: $font-medium;
