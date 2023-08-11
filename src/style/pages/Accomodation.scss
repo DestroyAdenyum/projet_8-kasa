@@ -1,0 +1,38 @@
+.accomodation__description {
+    @include flex($fdirection: column);
+    width: 1240px;
+    margin: 0 100px 0 100px;
+    gap: 10px;
+
+    .title {
+        h2 {
+            color: $primary-color;
+            margin: 0;
+        }
+    
+        .location {
+            color: $primary-color;
+            margin: 0;
+        } 
+    }
+
+
+    .description {
+        @include flex($fdirection: row, $jcontent: center, $alitems: flex-start);
+        width: 1240px;
+        gap: 60px;
+        margin: 0;
+
+        .description__collapse {
+            width: 50%;
+
+            .collapse__header {
+                width: 100%;
+            }
+
+            .collapse__content {
+                width: 100%;
+            }
+        }
+    }
+}

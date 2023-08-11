@@ -14,7 +14,7 @@ function Home() {
             <section className='cards__section'>
                 <div className='cards__container'>
                     {data.map((accommodation) => (
-                        <Card key={accommodation.id} title={accommodation.title} imageSrc={accommodation.cover} />
+                        <Card key={accommodation.id} title={accommodation.title} imageSrc={accommodation.cover} id={accommodation.id} />
                     ))}
                 </div>
             </section>
