@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import Collapse from "../components/Collapse";
 import Carousel from '../components/Carousel';
+import Tags from '../components/Tags';
+import Host from '../components/Host';
+import Rating from '../components/Rating';
 
 import data from '../data/data.json';
 
@@ -16,27 +19,33 @@ function Accomodation() {
         <div className='wrapper'>
             <section className='accomodation__description'>
                 <Carousel accomodation={accomodation} />
-                <div>
+                <div className='title_host'>
                     <div className='title'>
                         <h2>{accomodation.title}</h2>
                         <p className='location'>{accomodation.location}</p>
                     </div>
-                    {/* hôte */}
+                    <Host host={accomodation.host} />
                 </div>
                 <div>
-                    {/* tags */}
-                    {/* rating */}
+                    <Tags tags={accomodation.tags} />
+                    <Rating />
                 </div>
                 <div className='description'>
                     <Collapse 
                         title='Description'
-                        text={accomodation.description}
                         className='description__collapse'
+                        text={accomodation.description}
                     />
                     <Collapse 
                         title='Équipements'
-                        text={accomodation.equipments}
                         className='description__collapse'
+                        text={<ul>
+                                {accomodation.equipments.map((equipment, index) => (
+                                    <li key={index}>
+                                        {equipment}
+                                    </li>
+                                ))}
+                            </ul>}
                     />
                 </div>
             </section>

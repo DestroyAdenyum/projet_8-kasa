@@ -1,0 +1,13 @@
+.tags {
+    @include flex($fdirection: row);
+    gap: 10px;
+
+    .tag {
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding: 0 20px 0 20px;
+        color: $secondary-color;
+        font-size: $font-S14;
+        font-weight: $font-medium;
+    }
+}

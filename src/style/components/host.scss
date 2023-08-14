@@ -1,0 +1,20 @@
+.host {
+    @include flex($fdirection: row, $jcontent: flex-end);
+    gap: 10px;
+    width: 10%;
+
+    .host__name {
+        font-size: $font-S18;
+        font-weight: $font-medium;
+        color: $primary-color;
+        text-align: right;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .host__picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 100px;
+    }
+}

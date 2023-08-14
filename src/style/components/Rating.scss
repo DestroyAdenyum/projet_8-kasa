@@ -1,0 +1,6 @@
+.rating {
+    @include flex($fdirection: row);
+    gap: 10px;
+    width: 196px;
+    height: 36px;
+}

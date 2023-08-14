@@ -4,18 +4,22 @@
     margin: 0 100px 0 100px;
     gap: 10px;
 
-    .title {
-        h2 {
-            color: $primary-color;
-            margin: 0;
-        }
-    
-        .location {
-            color: $primary-color;
-            margin: 0;
-        } 
-    }
+    .title_host {
+        @include flex($fdirection: row, $jcontent: space-between);
 
+        .title {
+            h2 {
+                color: $primary-color;
+                margin: 0;
+            }
+        
+            .location {
+                color: $primary-color;
+                margin: 0;
+                padding-top: 10px;
+            } 
+        }
+    }
 
     .description {
         @include flex($fdirection: row, $jcontent: center, $alitems: flex-start);
@@ -32,6 +36,14 @@
 
             .collapse__content {
                 width: 100%;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    gap: 10px;
+                    font-size: $font-S18;
+                    font-weight: $font-regular;
+                }
             }
         }
     }

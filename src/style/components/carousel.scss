@@ -2,35 +2,35 @@
     width: 1240px;
     height: 415px;
     border-radius: 25px;
+    position: relative;
 
     .carousel__pictures {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 25px;
-        position: relative;
         z-index: 0;
     }
 
     .arrowLeft {
         position: absolute;
-        top: 35%;
-        left: 200px;
+        top: 40%;
+        left: 20px;
         z-index: 1;
         cursor: pointer;
     }
 
     .arrowRight {
         position: absolute;
-        top: 35%;
-        right: 200px;
+        top: 40%;
+        right: 20px;
         z-index: 1;
         cursor: pointer;
     }
 
     .slideNumber {
         position: absolute;
-        bottom: 350px;
+        bottom: 5px;
         left: 50%;
         color: $secondary-color;
         font-size: $font-S18;
