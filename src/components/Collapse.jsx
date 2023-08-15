@@ -11,10 +11,10 @@ function Collapse({ title, text, className }) {
     };
 
     return(
-        <div className={`collapse__container ${isOpen ? 'open' : ''} ${className}`}>
+        <div className={`collapse__container ${className}`}>
             <div className="collapse__header">
                 <h3 className="collapse__title">{title}</h3>
-                <img src={Toparrow} alt='flèche' onClick={toggleCollapse} />
+                <img className={`collapse__arrow ${isOpen ? 'rotate' : ''}`} src={Toparrow} alt='flèche' onClick={toggleCollapse} />
             </div>
             {isOpen && <div className="collapse__content">{text}</div>}
         </div>

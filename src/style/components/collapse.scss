@@ -22,12 +22,23 @@
             font-weight: $font-medium;
             margin: 0;
         }
+
+        .collapse__arrow {
+            transition: transform 0.5s ease;
+        }
+        
+        .collapse__arrow.rotate {
+            transform: rotate(180deg);
+        }
+
     }
 
     .collapse__content {
         width: 1023px;
         background-color: $bg-cards-color;
         color: $primary-color;
+        font-size: $font-S18;
+        font-weight: $font-regular;
         border-radius: 0 0 5px 5px;
         padding: 15px;
     }
