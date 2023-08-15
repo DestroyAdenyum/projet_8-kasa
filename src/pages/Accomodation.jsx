@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 
 import Collapse from "../components/Collapse";
 import Carousel from '../components/Carousel';
@@ -13,6 +13,14 @@ import data from '../data/data.json';
 function Accomodation() {
     const { id } = useParams();
     const accomodation = data.find(accomodation => accomodation.id === id);
+
+    // verification de la validité de l'ID 
+    const validID = !!accomodation;
+
+    // si l'ID n'est pas valide, redirection vers la page erreur
+    if (!validID) {
+        return <Navigate to="/error" />;
+    }
 
     return (
         <div className='wrapper'>
