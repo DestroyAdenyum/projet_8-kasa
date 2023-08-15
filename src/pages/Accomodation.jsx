@@ -10,7 +10,6 @@ import Rating from '../components/Rating';
 import data from '../data/data.json';
 
 
-
 function Accomodation() {
     const { id } = useParams();
     const accomodation = data.find(accomodation => accomodation.id === id);
@@ -26,9 +25,9 @@ function Accomodation() {
                     </div>
                     <Host host={accomodation.host} />
                 </div>
-                <div>
+                <div className='tags_rating'>
                     <Tags tags={accomodation.tags} />
-                    <Rating />
+                    <Rating value={accomodation.rating} />
                 </div>
                 <div className='description'>
                     <Collapse 

@@ -1,0 +1,28 @@
+.error {
+    @include flex($fdirection: column, $jcontent: center, $alitems: center);
+    gap: 80px;
+
+    &__number {
+        width: 597px;
+        height: 263px;
+        font-size: 250px;
+        font-weight: 700;
+        color: $primary-color;
+        text-align: center;
+        margin: 0;
+    };
+    
+    &__text {
+        width: 872px;
+        height: 51px;
+        font-size: $font-S36;
+        font-weight: $font-medium;
+        color: $primary-color;
+    };
+    
+    &__nav {
+        color: $primary-color;
+        text-decoration: underline;
+        margin-bottom: 70px;
+    };
+}

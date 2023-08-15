@@ -21,6 +21,11 @@
         }
     }
 
+    .tags_rating {
+        @include flex($fdirection: row, $jcontent: space-between);
+        margin-bottom: 10px;
+    }
+
     .description {
         @include flex($fdirection: row, $jcontent: center, $alitems: flex-start);
         width: 1240px;

@@ -15,6 +15,14 @@ function Carousel({ accomodation }) {
         setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
     }
 
+    if (length === 1) {
+        return (
+            <div className="carousel">
+                <img className="carousel__pictures" src={accomodation.pictures[0]} alt='images du logement'></img>
+            </div>
+        )
+    }
+
     return (
         <div className="carousel">
             <img className="arrowLeft" src={LeftArrow} alt='flèche gauche' onClick={previousSlide}></img>
