@@ -34,5 +34,8 @@ $font-bold: 700;
 
 
 // **** MEDIAS **** //
-$phone: 375px;
-$tablet: 768px;
+$min-phone: 320px;
+$max-phone: 768px;
+
+$min-tablet: 769px;
+$max-tablet: 1024px;

@@ -1,9 +1,14 @@
 .collapse__section {
     @include flex($fdirection: column, $alitems: center);
     width: 100%;
+    padding: 0 20px 0 20px;
     gap: 30px;
 
     @include tablet {
+        padding: 20px;
+    }
+
+    @include phone {
         padding: 20px;
     }
 }
@@ -17,7 +22,7 @@
     }
 
     @include phone {
-        width: 335px;
+        width: 100%;
     }
 
     .collapse__header {
@@ -27,9 +32,19 @@
         background-color: $primary-color;
         border-radius: 5px;
         padding: 10px 20px 10px 15px;
-
+        margin-left: 20px;
+        margin-right: 20px;
+        
         @include tablet {
             width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @include phone {
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
         }
           
         .collapse__title {
@@ -37,6 +52,10 @@
             font-size: $font-S24;
             font-weight: $font-medium;
             margin: 0;
+
+            @include tablet {
+                font-size: $font-S18;
+            }
 
             @include phone {
                 font-size: $font-S18;

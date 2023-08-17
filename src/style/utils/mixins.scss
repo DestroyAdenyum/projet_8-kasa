@@ -8,13 +8,13 @@
 
 // **** MEDIA QUERIES **** //
 @mixin tablet {
-    @media screen and (max-width:$tablet) {
+    @media screen and (min-width:$min-tablet) and (max-width:$max-tablet) {
         @content;
     }
 }
 
 @mixin phone {
-    @media screen and (max-width:$phone) {
+    @media screen and (min-width:$min-phone) and (max-width:$max-phone) {
         @content;
     }     
   }

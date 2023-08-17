@@ -1,23 +1,35 @@
 .banner__section {
     @include flex($jcontent: center, $alitems: center);
     width: 100%;
+    margin-bottom: 40px;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include phone {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     
     .banner__container {
         width: 1240px;
         height: 223px;
-        margin: 0;
         border-radius: 20px;
         position: relative;
-        margin: 10px 20px 40px 20px;
-
+        
         @include tablet {
-            width: 768px;
+            width: 100%;
+            height: 223px;
+            margin-right: 20px;
+            margin-left: 20px;
         }
     
         @include phone {
-            width: 335px;
-            height: 110px;
-            margin: 10px 10px 20px 10px;
+            width: 100%;
+            height: auto;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         .banner__image {
@@ -34,6 +46,7 @@
         }
         
         .banner__title {
+            width: 60%;
             margin: 0;
             position: absolute;
             top: 40%;
@@ -41,13 +54,12 @@
             color: $secondary-color;
             font-size: $font-S48;
             font-weight: $font-medium;
-            text-align: left;
 
             @include tablet {
-                width: 80%;
                 font-size: $font-S36;
-                top: 30%;
-                left: 13%;
+                top: 35%;
+                left: 20%;
+                text-align: center;
             }
         
             @include phone {
