@@ -2,6 +2,10 @@
     @include flex($fdirection: row, $alitems: center);
     gap: 10px;
 
+    @include phone {
+        flex-wrap: wrap;
+    }
+
     .tag {
         height: 20px;
         background-color: $primary-color;
@@ -11,5 +15,6 @@
         font-size: $font-S14;
         font-weight: $font-medium;
         text-align: center;
+
     }
 }

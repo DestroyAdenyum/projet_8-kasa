@@ -10,7 +10,9 @@ import data from '../data/data.json';
 function Home() {
     return (
         <div className='wrapper'>
-            <Banner ImageSrc={HomeBanner} BannerTitle='Chez vous, partout et ailleurs' />
+            <section className='banner__section'>
+                <Banner ImageSrc={HomeBanner} BannerTitle='Chez vous, partout et ailleurs' />
+            </section>
             <section className='cards__section'>
                 <div className='cards__container'>
                     {data.map((accommodation) => (

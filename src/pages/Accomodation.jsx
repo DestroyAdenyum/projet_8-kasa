@@ -26,16 +26,18 @@ function Accomodation() {
         <div className='wrapper'>
             <section className='accomodation__description'>
                 <Carousel accomodation={accomodation} />
-                <div className='title_host'>
-                    <div className='title'>
-                        <h2>{accomodation.title}</h2>
-                        <p className='location'>{accomodation.location}</p>
+                <div className='information'>
+                    <div className='title_tags'>
+                        <div className='title'>
+                            <h2>{accomodation.title}</h2>
+                            <p className='location'>{accomodation.location}</p>
+                        </div>
+                        <Tags tags={accomodation.tags} />                   
+                    </div>      
+                    <div className='host_rating'>
+                        <Host host={accomodation.host} />
+                        <Rating value={accomodation.rating} />
                     </div>
-                    <Host host={accomodation.host} />
-                </div>
-                <div className='tags_rating'>
-                    <Tags tags={accomodation.tags} />
-                    <Rating value={accomodation.rating} />
                 </div>
                 <div className='description'>
                     <Collapse 

@@ -1,20 +1,52 @@
 .header {
-    margin: 45px 100px 45px 100px;
-    width: 1240px;
     @include flex($fdirection: row, $jcontent: space-between, $alitems: center);
+    margin: 45px 100px 45px 100px;
+    
+
+    @include tablet {
+        margin: 20px;
+    }
+
+    @include phone {
+        height: 46px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
 
     .header__logo {
         width: 210px;
         height: 68px;
+
+        @include phone {
+            width: 145px;
+            height: 46px;
+        }
     }
 
     .header__links {
-        @include flex($fdirection: row, $jcontent: flex-end, $alitems: center);
+        @include flex($fdirection: row, $alitems: center);
+        gap: 55px;
+
+        @include tablet {
+            height: 25px;
+            margin: 0;
+            padding: 0;
+            gap: 35px;
+        }
+
+        @include phone {
+            height: 17px;
+            gap: 25px;
+        }
 
         li {
-            padding-left: 55px;
             font-size: $font-S24;
             font-weight: $font-medium;
+
+            @include phone {
+                font-size: $font-S12;
+                text-transform: uppercase;
+            }
         }
 
         .nav-link {

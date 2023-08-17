@@ -2,11 +2,23 @@
     @include flex($fdirection: column, $alitems: center);
     width: 100%;
     gap: 30px;
+
+    @include tablet {
+        padding: 20px;
+    }
 }
 
 .collapse__container {
     @include flex($fdirection: column, $jcontent: center, $alitems: center);
     width: 1240px;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include phone {
+        width: 335px;
+    }
 
     .collapse__header {
         @include flex($fdirection: row, $jcontent: space-between, $alitems: center);
@@ -15,12 +27,20 @@
         background-color: $primary-color;
         border-radius: 5px;
         padding: 10px 20px 10px 15px;
-    
+
+        @include tablet {
+            width: 100%;
+        }
+          
         .collapse__title {
             color: $secondary-color;
             font-size: $font-S24;
             font-weight: $font-medium;
             margin: 0;
+
+            @include phone {
+                font-size: $font-S18;
+            }
         }
 
         .collapse__arrow {
@@ -41,5 +61,14 @@
         font-weight: $font-regular;
         border-radius: 0 0 5px 5px;
         padding: 15px;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include phone {
+            width: 100%;
+            font-size: $font-S16;
+        }
     }
 }

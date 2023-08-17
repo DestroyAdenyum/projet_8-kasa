@@ -1,7 +1,7 @@
 .host {
     @include flex($fdirection: row, $jcontent: flex-end);
     gap: 10px;
-    width: 10%;
+    width: 160px;
 
     .host__name {
         font-size: $font-S18;

@@ -2,6 +2,10 @@
     @include flex($fdirection: column, $jcontent: center, $alitems: center);
     gap: 80px;
 
+    @include phone {
+        gap: 113px;
+    }
+
     &__number {
         width: 597px;
         height: 263px;
@@ -10,6 +14,13 @@
         color: $primary-color;
         text-align: center;
         margin: 0;
+
+        @include phone {
+            width: 198px;
+            height: 99px;
+            font-size: 96px;
+            margin-top: 66px;
+        }
     };
     
     &__text {
@@ -18,11 +29,28 @@
         font-size: $font-S36;
         font-weight: $font-medium;
         color: $primary-color;
+
+        @include tablet {
+            width: 450px;
+            font-size: $font-S24;
+            text-align: center;
+        }
+
+        @include phone {
+            width: 260px;
+            height: 52px;
+            font-size: $font-S18;
+            text-align: center;
+        }
     };
     
     &__nav {
         color: $primary-color;
         text-decoration: underline;
         margin-bottom: 70px;
+
+        @include phone {
+            margin-bottom: 100px;
+        }
     };
 }

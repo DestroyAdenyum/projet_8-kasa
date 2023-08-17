@@ -8,7 +8,9 @@ import AboutBanner from '../assets/images/about_image_banner.png';
 function About() {
     return (
         <div className='wrapper'>
-            <Banner ImageSrc={AboutBanner} BannerTitle='' />
+            <section className='banner__section'>
+                <Banner ImageSrc={AboutBanner} BannerTitle='' />
+            </section>
             <section className='collapse__section'>
                 <Collapse
                     title='Fiabilité'

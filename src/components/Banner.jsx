@@ -1,7 +1,7 @@
 function Banner({ ImageSrc, BannerTitle }) {
     return (
         <div className="banner__container">
-            <img className="banner__image" src={ImageSrc} alt='' />
+            <img className="banner__image" src={ImageSrc} alt='paysage' />
             <h1 className="banner__title">{BannerTitle}</h1>
         </div>
     )
