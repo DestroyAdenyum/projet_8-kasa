@@ -63,6 +63,7 @@
             }
         
             @include phone {
+                width: 80%;
                 font-size: $font-S24;
                 padding-left: 10px;
                 top: 22%;
